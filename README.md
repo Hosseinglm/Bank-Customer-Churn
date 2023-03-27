@@ -1,7 +1,7 @@
 # Bank Customer Churn
 
 This is a Python code for a machine learning task, specifically for handling an imbalanced dataset.
-The task is to predict churn in a bank using a Support Vector Machine (SVM) algorithm.
+The task is to predict churn in a bank using a Support Vector Machine (SVM) algorithm and Logistic Regression.
 
 The first part of the code is importing necessary libraries such as numpy, pandas, matplotlib_inline and seaborn.
 Then, the dataset is loaded using pandas read_csv function, and the head and info of the dataset is printed. Next,
@@ -16,9 +16,8 @@ The next step is splitting the data into training and testing sets.
 There are three sets created: one from the original dataset, and two from RUS and ROS data.
 
 Finally, feature scaling is applied using StandardScaler from scikit-learn library.
-Support Vector Machine (SVM) algorithm is used to train the model on the training sets, and the model is tested on the testing sets.
+Support Vector Machine (SVM) algorithm and XGBoost is used to train the model on the training sets, and the model is tested on the testing sets.
 The accuracy of the model is then measured using the classification_report and confusion_matrix functions from the scikit-learn library.
 
 Overall, the code follows the standard machine learning pipeline: data preprocessing, EDA, handling imbalance data, train-test split,
-feature scaling, and model training/testing. However, the comments and explanations in the code are sparse and incomplete.
-It would be helpful if the author of the code provides more comprehensive comments and explanations of each step.
+feature scaling, and model training/testing. You can see and compare the results of the SVM and XGBoost algorithms implemented.
